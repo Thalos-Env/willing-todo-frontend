@@ -1,4 +1,4 @@
-# Todo App
+# willing-todo-frontend
 
 ## Configurando Ambiente
 
@@ -48,5 +48,3 @@ Rodar na porta 3000
 ```
 npm start
 ```
-
-# willing-todo-frontend
