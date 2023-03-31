@@ -1,0 +1,4 @@
+!.jest
+.storybook
+*.css
+*generators
