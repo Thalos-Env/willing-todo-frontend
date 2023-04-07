@@ -2,7 +2,7 @@ import axios from 'axios'
 import * as jose from 'jose'
 import { todoType } from '../types/todoType'
 
-export const REACT_APP_API_URL = 'http://todorestapplication.us-east-1.elasticbeanstalk.com:8080'
+export const { REACT_APP_API_URL } = process.env
 
 export const isKeepLogged = () => localStorage.getItem('keepLogged') === 'true'
 
