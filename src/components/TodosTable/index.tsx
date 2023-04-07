@@ -102,7 +102,7 @@ const TodosTable = ({ todos, setIsModalUpdateTodo, setIsModalDeleteOpen }: ITodo
                 {dateToString(new Date(todo.targetDate))}
               </Td>
               <Td dataLabel={'Username'} textCenter>
-                {todo.userName}
+                {todo.username}
               </Td>
               <Td dataLabel={'Ações'} textCenter>
                 <ActionsTable
