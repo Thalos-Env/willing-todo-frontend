@@ -3,6 +3,6 @@ export const columnNamesPtBr = {
   done: 'Status',
   description: 'Descrição',
   targetDate: 'Data Limite',
-  userName: 'Username',
+  username: 'Username',
   actions: 'Ações',
 }

@@ -107,13 +107,13 @@ export const getTodoById = async (id: number) => {
   return response
 }
 
-export const createTodo = async (createTodo: Omit<todoType, 'id' | 'userName'>) => {
+export const createTodo = async (createTodo: Omit<todoType, 'id' | 'username'>) => {
   const token = getToken()
   if (!token) return null
   const username = getUserName()
   const response = await axios.post(
     `${REACT_APP_API_URL}/users/${username}/todos`,
-    { ...createTodo, userName: username },
+    { ...createTodo, username: username },
     {
       headers: { Authorization: `Bearer ${token}` },
     },
@@ -125,7 +125,7 @@ export const updateTodo = async (id: string, updatedTodo: todoType) => {
   const token = getToken()
   if (!token) return null
   const response = await axios.put(
-    `${REACT_APP_API_URL}/users/${updatedTodo.userName}/todos/${id}`,
+    `${REACT_APP_API_URL}/users/${updatedTodo.username}/todos/${id}`,
     updatedTodo,
     {
       headers: { Authorization: `Bearer ${token}` },

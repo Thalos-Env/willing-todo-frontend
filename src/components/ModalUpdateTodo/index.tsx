@@ -80,7 +80,7 @@ const ModalUpdateTodo = ({ isModalOpen, setIsModalOpen }: IModalUpdateTodoProps)
       id: selectedTodo?.id,
       description: description,
       targetDate: targetDate,
-      userName: selectedTodo?.userName as string,
+      username: selectedTodo?.username as string,
       done: isChecked as boolean,
     }
 
